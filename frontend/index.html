@@ -1,0 +1,26 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta http-equiv="X-UA-Compatible" content="IE=edge">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <!-- Jquery needed -->
+    <script src="https://code.jquery.com/jquery-3.6.0.slim.min.js" integrity="sha256-u7e5khyithlIdTpu22PHhENmPcRdFiHRjhAuHcs05RI=" crossorigin="anonymous"></script>
+    <script type="text/javascript" src="https://unpkg.com/axios@0.23.0/dist/axios.min.js"></script>
+    <script type="text/javascript" src="./scripts.js"></script>
+
+    <title>Consulta CEP Fácil</title>
+</head>
+<body>
+    <div id="content">
+        <div id="card">
+            <h2>Consulta CEP Fácil</h2>
+            <label >Digite seu CEP</label>
+            <input id="cepinput" type="number" onblur="pegarcep()">
+            <button id="pesquisar" onclick="gerarhtml()">Consultar</button>
+            <div id="resultado"></div>
+        </div>
+    </div>
+</script>
+</body>
+</html>
